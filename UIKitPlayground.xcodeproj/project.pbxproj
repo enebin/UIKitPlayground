@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		079F0D5229A9DA3200FD068D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 079F0D5129A9DA3200FD068D /* RxCocoa */; };
+		079F0D5429A9DA3200FD068D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 079F0D5329A9DA3200FD068D /* RxSwift */; };
+		079F0D9F29AA142E00FD068D /* UIKitPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F0D9E29AA142E00FD068D /* UIKitPlaygroundTests.swift */; };
+		079F0DAC29AB308300FD068D /* AnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F0DAB29AB308300FD068D /* AnimateViewController.swift */; };
+		079F0DAF29AB309F00FD068D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 079F0DAE29AB309F00FD068D /* SnapKit */; };
 		9BAE30172955DEE700C02D13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE30162955DEE700C02D13 /* AppDelegate.swift */; };
 		9BAE30192955DEE700C02D13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE30182955DEE700C02D13 /* SceneDelegate.swift */; };
 		9BAE301B2955DEE700C02D13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE301A2955DEE700C02D13 /* ViewController.swift */; };
@@ -15,7 +20,20 @@
 		9BAE30232955DEE900C02D13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAE30212955DEE900C02D13 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		079F0DA029AA142E00FD068D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BAE300B2955DEE700C02D13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BAE30122955DEE700C02D13;
+			remoteInfo = UIKitPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		079F0D9C29AA142E00FD068D /* UIKitPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		079F0D9E29AA142E00FD068D /* UIKitPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitPlaygroundTests.swift; sourceTree = "<group>"; };
+		079F0DAB29AB308300FD068D /* AnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateViewController.swift; sourceTree = "<group>"; };
 		9BAE30132955DEE700C02D13 /* UIKitPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAE30162955DEE700C02D13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BAE30182955DEE700C02D13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,20 +45,47 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9BAE30102955DEE700C02D13 /* Frameworks */ = {
+		079F0D9929AA142E00FD068D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BAE30102955DEE700C02D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079F0DAF29AB309F00FD068D /* SnapKit in Frameworks */,
+				079F0D5429A9DA3200FD068D /* RxSwift in Frameworks */,
+				079F0D5229A9DA3200FD068D /* RxCocoa in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		079F0D9D29AA142E00FD068D /* UIKitPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				079F0D9E29AA142E00FD068D /* UIKitPlaygroundTests.swift */,
+			);
+			path = UIKitPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		079F0DAA29AB307400FD068D /* Week1 */ = {
+			isa = PBXGroup;
+			children = (
+				079F0DAB29AB308300FD068D /* AnimateViewController.swift */,
+			);
+			path = Week1;
+			sourceTree = "<group>";
+		};
 		9BAE300A2955DEE700C02D13 = {
 			isa = PBXGroup;
 			children = (
 				9BAE30152955DEE700C02D13 /* UIKitPlayground */,
+				079F0D9D29AA142E00FD068D /* UIKitPlaygroundTests */,
 				9BAE30142955DEE700C02D13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				9BAE30132955DEE700C02D13 /* UIKitPlayground.app */,
+				079F0D9C29AA142E00FD068D /* UIKitPlaygroundTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +102,7 @@
 		9BAE30152955DEE700C02D13 /* UIKitPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				079F0DAA29AB307400FD068D /* Week1 */,
 				9BAE30162955DEE700C02D13 /* AppDelegate.swift */,
 				9BAE30182955DEE700C02D13 /* SceneDelegate.swift */,
 				9BAE301A2955DEE700C02D13 /* ViewController.swift */,
@@ -70,6 +117,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		079F0D9B29AA142E00FD068D /* UIKitPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079F0DA429AA142E00FD068D /* Build configuration list for PBXNativeTarget "UIKitPlaygroundTests" */;
+			buildPhases = (
+				079F0D9829AA142E00FD068D /* Sources */,
+				079F0D9929AA142E00FD068D /* Frameworks */,
+				079F0D9A29AA142E00FD068D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				079F0DA129AA142E00FD068D /* PBXTargetDependency */,
+			);
+			name = UIKitPlaygroundTests;
+			productName = UIKitPlaygroundTests;
+			productReference = 079F0D9C29AA142E00FD068D /* UIKitPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9BAE30122955DEE700C02D13 /* UIKitPlayground */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BAE30272955DEE900C02D13 /* Build configuration list for PBXNativeTarget "UIKitPlayground" */;
@@ -83,6 +148,11 @@
 			dependencies = (
 			);
 			name = UIKitPlayground;
+			packageProductDependencies = (
+				079F0D5129A9DA3200FD068D /* RxCocoa */,
+				079F0D5329A9DA3200FD068D /* RxSwift */,
+				079F0DAE29AB309F00FD068D /* SnapKit */,
+			);
 			productName = UIKitPlayground;
 			productReference = 9BAE30132955DEE700C02D13 /* UIKitPlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -97,6 +167,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					079F0D9B29AA142E00FD068D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9BAE30122955DEE700C02D13;
+					};
 					9BAE30122955DEE700C02D13 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -111,16 +185,28 @@
 				Base,
 			);
 			mainGroup = 9BAE300A2955DEE700C02D13;
+			packageReferences = (
+				079F0D5029A9DA3200FD068D /* XCRemoteSwiftPackageReference "RxSwift" */,
+				079F0DAD29AB309F00FD068D /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 9BAE30142955DEE700C02D13 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9BAE30122955DEE700C02D13 /* UIKitPlayground */,
+				079F0D9B29AA142E00FD068D /* UIKitPlaygroundTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		079F0D9A29AA142E00FD068D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BAE30112955DEE700C02D13 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,10 +220,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		079F0D9829AA142E00FD068D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079F0D9F29AA142E00FD068D /* UIKitPlaygroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BAE300F2955DEE700C02D13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079F0DAC29AB308300FD068D /* AnimateViewController.swift in Sources */,
 				9BAE301B2955DEE700C02D13 /* ViewController.swift in Sources */,
 				9BAE30172955DEE700C02D13 /* AppDelegate.swift in Sources */,
 				9BAE30192955DEE700C02D13 /* SceneDelegate.swift in Sources */,
@@ -145,6 +240,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		079F0DA129AA142E00FD068D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BAE30122955DEE700C02D13 /* UIKitPlayground */;
+			targetProxy = 079F0DA029AA142E00FD068D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9BAE301C2955DEE700C02D13 /* Main.storyboard */ = {
@@ -166,6 +269,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		079F0DA229AA142E00FD068D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W6QHM4Y43Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enebin.UIKitPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKitPlayground.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UIKitPlayground";
+			};
+			name = Debug;
+		};
+		079F0DA329AA142E00FD068D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W6QHM4Y43Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enebin.UIKitPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKitPlayground.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UIKitPlayground";
+			};
+			name = Release;
+		};
 		9BAE30252955DEE900C02D13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -339,6 +478,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		079F0DA429AA142E00FD068D /* Build configuration list for PBXNativeTarget "UIKitPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079F0DA229AA142E00FD068D /* Debug */,
+				079F0DA329AA142E00FD068D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9BAE300E2955DEE700C02D13 /* Build configuration list for PBXProject "UIKitPlayground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -358,6 +506,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		079F0D5029A9DA3200FD068D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		079F0DAD29AB309F00FD068D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		079F0D5129A9DA3200FD068D /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 079F0D5029A9DA3200FD068D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		079F0D5329A9DA3200FD068D /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 079F0D5029A9DA3200FD068D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		079F0DAE29AB309F00FD068D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 079F0DAD29AB309F00FD068D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9BAE300B2955DEE700C02D13 /* Project object */;
 }

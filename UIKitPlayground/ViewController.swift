@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -13,6 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     
         scrollView.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool){
+        let vc = AnimateViewController()
+        self.show(vc, sender: self)
     }
 }
 

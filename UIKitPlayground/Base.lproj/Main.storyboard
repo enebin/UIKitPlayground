@@ -19,18 +19,18 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2lm-Yj-Qcf">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain" translatesAutoresizingMaskIntoConstraints="NO" id="Sr2-wA-vNx">
-                                        <rect key="frame" x="0.0" y="0.0" width="3000" height="759"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain" translatesAutoresizingMaskIntoConstraints="NO" id="Sr2-wA-vNx">
+                                        <rect key="frame" x="0.0" y="0.0" width="3000" height="950"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="950" id="7o9-uB-cRg"/>
                                             <constraint firstAttribute="width" constant="3000" id="x9w-5p-BwH"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Sr2-wA-vNx" firstAttribute="bottom" secondItem="9LY-Q6-HY4" secondAttribute="bottom" id="2nF-Ab-y3G"/>
-                                    <constraint firstItem="Sr2-wA-vNx" firstAttribute="height" secondItem="ngW-1O-Ufn" secondAttribute="height" id="8pg-6G-Wxo"/>
                                     <constraint firstItem="Sr2-wA-vNx" firstAttribute="trailing" secondItem="9LY-Q6-HY4" secondAttribute="trailing" id="E7d-eK-dha"/>
-                                    <constraint firstItem="Sr2-wA-vNx" firstAttribute="top" secondItem="9LY-Q6-HY4" secondAttribute="top" id="FZo-UW-Opz"/>
+                                    <constraint firstItem="Sr2-wA-vNx" firstAttribute="bottom" secondItem="9LY-Q6-HY4" secondAttribute="bottom" id="Z7p-Zc-3zC"/>
+                                    <constraint firstItem="Sr2-wA-vNx" firstAttribute="top" secondItem="9LY-Q6-HY4" secondAttribute="top" id="ZmZ-Ny-pAd"/>
                                     <constraint firstItem="Sr2-wA-vNx" firstAttribute="leading" secondItem="9LY-Q6-HY4" secondAttribute="leading" id="yob-kM-51r"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="9LY-Q6-HY4"/>
@@ -47,6 +47,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="Sr2-wA-vNx" id="1CI-RZ-u6S"/>
                         <outlet property="scrollView" destination="2lm-Yj-Qcf" id="h4G-lJ-e2a"/>
                     </connections>
                 </viewController>
